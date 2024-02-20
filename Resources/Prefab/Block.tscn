@@ -9,6 +9,4 @@ script = ExtResource("1_wbtjj")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D"]
 
-[node name="MeshInstance2D" type="MeshInstance2D" parent="."]
-
 [node name="Sprite2D" type="Sprite2D" parent="."]

@@ -1,14 +1,16 @@
-[gd_scene load_steps=4 format=3 uid="uid://c4quw2botybw7"]
+[gd_scene load_steps=5 format=3 uid="uid://c4quw2botybw7"]
 
 [ext_resource type="Texture2D" uid="uid://cwnr2d41uaa1k" path="res://Resources/BackgroundSprite.png" id="1_rm82k"]
 [ext_resource type="PackedScene" uid="uid://d3m4p2ucmf8wj" path="res://Resources/Prefab/Block.tscn" id="2_kkqou"]
+[ext_resource type="Shape2D" uid="uid://bgs2f6ppao4qm" path="res://Resources/Hitboxes/BlockShape.tres" id="3_jo6eu"]
 [ext_resource type="Texture2D" uid="uid://colpf7ggo3los" path="res://Resources/RectBlockSprite.png" id="3_rk0ru"]
 
 [node name="Node2D" type="Node2D"]
 
-[node name="Block" parent="." instance=ExtResource("2_kkqou")]
-block_texture = ExtResource("3_rk0ru")
-
 [node name="Background" type="Sprite2D" parent="."]
 position = Vector2(42, 42)
 texture = ExtResource("1_rm82k")
+
+[node name="Block" parent="." instance=ExtResource("2_kkqou")]
+block_texture = ExtResource("3_rk0ru")
+hitbox_shape = ExtResource("3_jo6eu")
